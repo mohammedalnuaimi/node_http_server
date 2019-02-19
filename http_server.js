@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
     const promisfy = () => {
         console.log(`this is my js promise to learn in 5000`)
         return new Promise((resolve, reject) => {
-            setTimeout(resolve, 5000);
+            setTimeout(resolve, 1000);
         })
     }
 
@@ -29,10 +29,12 @@ const server = http.createServer((req, res) => {
         promisfy(),
         promisfy()
     ]).then(() => {
+        var a, b;
+        [a = 5, b = 7] = [0];
+        console.log(a); // 1
+        console.log(b); // 7
         console.log(`this is my js promise finished`)
     })
-
-
 
     res.setHeader('Content-Type', 'image/jpg')
 
