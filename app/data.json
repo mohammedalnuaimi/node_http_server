@@ -1,0 +1,76 @@
+{
+    "books": [
+        {
+            "id": 0,
+            "title": "the art of technology"
+        },
+        {
+            "id": 1,
+            "title": "the art of reading"
+        },
+        {
+            "id": 2,
+            "title": "the art of driving"
+        },
+        {
+            "id": 3,
+            "title": "the art of trading"
+        },
+        {
+            "id": 4,
+            "title": "the art of engineering"
+        }
+    ],
+    "user": [
+        {
+            "id": 0,
+            "name": "James Bond"
+        },
+        {
+            "id": 1,
+            "name": "Lili H"
+        },
+        {
+            "id": 2,
+            "name": "Rob MacDonalds"
+        },
+        {
+            "id": 3,
+            "name": "Rich MacTyre"
+        },
+        {
+            "id": 4,
+            "name": "Tim Lewis"
+        },
+        {
+            "id": 5,
+            "name": "Shuan Swales"
+        },
+        {
+            "id": 6,
+            "name": "Cost G"
+        }
+    ],
+    "loan": [
+        {
+            "bookId": 0,
+            "userId": 1
+        },
+        {
+            "bookId": 1,
+            "userId": 2
+        },
+        {
+            "bookId": 2,
+            "userId": 3
+        },
+        {
+            "bookId": 3,
+            "userId": 5
+        },
+        {
+            "bookId": 4,
+            "userId": 0
+        }
+    ]
+}

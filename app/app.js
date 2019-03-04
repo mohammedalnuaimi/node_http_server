@@ -4,10 +4,12 @@ const cookieParser = require('cookie-parser');
 const morganLogger = require('morgan-debug');
 const helmet = require('helmet')
 const indexRouter = require('./routes/index');
-
+const data = require('./data')
 const app = express();
 
-// view engine setup
+app.locals.data = data;
+const port = 3000;
+
 app.use(morganLogger('app:server', 'dev'))
 app.use(helmet())
 app.use(express.json());
@@ -26,4 +28,10 @@ app.use(function(err, req, res, next) {
 next(createError(500, err))
 });
 
+
+// app.listen(port, err => {
+//   if (err) {
+//       console.log(err)
+//   }
+// })
 module.exports = app;
