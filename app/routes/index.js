@@ -3,13 +3,19 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/books', (req, res, next) => {
-  const {books, loans, user} = req.app.locals.data
+  const {books, loans, users} = req.app.locals.data
   
-  const mappedLoans = loans.maps(({bookId, userId}) => {
-    const books = books.find(book => book.id ==- bookId)
-    const user = users.find(user => user.id ==- userId)
+  const mappedLoans = loans.map(({bookId, userId}) => {
+    const book = books.find(book => book.id === bookId)
+    const user = users.find(user => user.id === userId)
+    
+    return {
+      book,
+      user
+    }
   })
-  
+
+
   res.send(mappedLoans)
 });
 

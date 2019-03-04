@@ -21,7 +21,7 @@
             "title": "the art of engineering"
         }
     ],
-    "user": [
+    "users": [
         {
             "id": 0,
             "name": "James Bond"
@@ -51,7 +51,7 @@
             "name": "Cost G"
         }
     ],
-    "loan": [
+    "loans": [
         {
             "bookId": 0,
             "userId": 1
